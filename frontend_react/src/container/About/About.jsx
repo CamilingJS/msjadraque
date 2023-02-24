@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import {images} from '../../constants';
 import './About.scss';
-import { urlFor, client } from '../../../client';
+import { urlFor, client } from '../../client';
 
 // const abouts = [
 //  {title: 'Strong subject knowledge', 
