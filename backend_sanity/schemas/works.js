@@ -10,9 +10,9 @@ export default {
       },
     
       {
-        name: 'description',
-        title: 'Description',
-        type: 'string',
+        name: 'blog',
+        title: 'Blog',
+        type: 'text',
       },
       {
         name: 'projectLink',
@@ -20,13 +20,24 @@ export default {
         type: 'string',
       },
       {
-        name: 'codeLink',
-        title: 'Code Link',
-        type: 'string',
-      },
-      {
         name: 'imgUrl',
         title: 'ImageUrl',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
+      {
+        name: 'imgUrl2',
+        title: 'ImageUrl2',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
+      {
+        name: 'imgUrl3',
+        title: 'ImageUrl3',
         type: 'image',
         options: {
           hotspot: true,

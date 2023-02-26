@@ -17,9 +17,9 @@ const About = () => {
 
   return (
     <>
-    <div className='aboutContainer' >
-      <h2 style={{marginTop:'1rem', textAlign:'center'}} >There should be no such thing as <br/><span>boring</span><span> mathematics.</span> - Eric Temple Bell
-    </h2>
+    <div id="about" className='aboutContainer' >
+      <h1 style={{}} >THERE SHOULD BE NO SUCH THING AS<br/><span>BORING</span><span> MATHEMATICS</span> - ERIC TEMPLE BELL
+    </h1>
     <div className='app__profiles' >
       {abouts.map((about, index) => (
         <motion.div
