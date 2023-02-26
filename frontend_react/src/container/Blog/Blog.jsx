@@ -8,15 +8,16 @@ const Blog = () => {
   const [blog, setBlog] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "works"]';
+    const query = '*[_type == "featuredBlog"]';
     client.fetch(query)
       .then((data)=> setBlog(data))
     }, []);
 
   return (
     <div style={{display:'flex', flexDirection:'column', alignItems:'center'}} >
+      {console.log(blog)}
       {blog.map((blog, index)=>(
-        <div id="blog" className="featuredBlog" >
+        <div key={blog + index} id="blog" className="featuredBlog" >
           <motion.div 
           whileInView={{ y: [100, 0], opacity: [0,1] }}
           transition={{duration: 0.5}}  
@@ -37,7 +38,7 @@ const Blog = () => {
           className="titleBlogContainer"
           >
             <h1>{blog.title}</h1>
-            <p>{blog.blog}</p>
+            <p>{blog.featuredBlog}</p>
             
             <motion.div
             whileInView={{ y: [100, 0], opacity: [0,1] }}

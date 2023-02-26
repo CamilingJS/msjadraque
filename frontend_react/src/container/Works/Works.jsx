@@ -9,7 +9,7 @@ import './Works.scss'
 const Works = () => {
   return (
     <>
-        <h2 style={{marginTop:'1rem', textAlign:'center'}} >There should be no such thing as <br/><span>boring</span><span> mathematics.</span> - Eric Temple Bell</h2>
+        <h1>WORKS</h1>
     </>
   )
 }
