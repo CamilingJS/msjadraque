@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 
 import './Blog.scss'
 import { urlFor, client } from '../../client';
+import PortableText from 'react-portable-text';
 
-const Blog = () => {
+const Blog = ({portableTextContent}) => {
   const [blog, setBlog] = useState([]);
 
   useEffect(() => {
@@ -15,7 +16,9 @@ const Blog = () => {
 
   return (
     <div style={{display:'flex', flexDirection:'column', alignItems:'center'}} >
-      {console.log(blog)}
+
+      
+      
       {blog.map((blog, index)=>(
         <div key={blog + index} id="blog" className="featuredBlog" >
           <motion.div 
@@ -38,7 +41,9 @@ const Blog = () => {
           className="titleBlogContainer"
           >
             <h1>{blog.title}</h1>
-            <p>{blog.featuredBlog}</p>
+            <p>{blog.blog}</p>
+            {console.log(blog)}
+           
             
             <motion.div
             whileInView={{ y: [100, 0], opacity: [0,1] }}

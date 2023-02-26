@@ -35,6 +35,10 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
+import math6 from '../assets/math6.svg'
+import prealgebra from '../assets/prealgebra.svg'
+import algebra from '../assets/algebra.svg'
+
 export default {
   email,
   mobile,
@@ -69,4 +73,7 @@ export default {
   nb,
   skype,
   spotify,
+  math6,
+  prealgebra,
+  algebra,
 };

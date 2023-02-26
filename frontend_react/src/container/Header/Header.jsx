@@ -62,9 +62,9 @@ const Header = () => {
       whileInView={{ x: [100, 0], opacity: [0,1] }}
       transition={{duration: 0.5}}
       className='app__header-circles'>
-        <div className="circle" ><h5>MATH 6</h5></div>
-        <div className="circle"><h5>PRE-ALGEBRA</h5></div>
-        <div className="circle"><h5>ALGEBRA</h5></div>
+        <div className="circle" ><img src={images.math6}  ></img></div>
+        <div className="circle"><img src={images.prealgebra} ></img></div>
+        <div className="circle"><img src={images.algebra} ></img></div>
       </motion.div>
 
       

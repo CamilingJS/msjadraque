@@ -1,3 +1,5 @@
+import { defineField, defineType } from "sanity";
+
 export default {
     name: 'featuredBlog',
     title: 'Featured Blog',
@@ -8,11 +10,10 @@ export default {
         title: 'Title',
         type: 'string',
       },
-    
       {
-        name: 'featuredBlog',
-        title: 'Featured Blog',
-        type: 'text',
+        name:'blog',
+        title:'Blog',
+        type:'text'
       },
       {
         name: 'projectLink',
@@ -58,4 +59,5 @@ export default {
       },
      
     ],
+
   };
