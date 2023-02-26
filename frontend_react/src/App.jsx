@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 
-import {About, Blog, Footer, Header, Skills, Testimonial} from './container';
+import {About, Blog, Footer, Header, Skills, Testimonial, Works} from './container';
 import {Navbar} from './components';
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
       <Header />
       <About />
       <Blog />
+      <Works />
       <Skills />
       <Testimonial />
       <Footer />

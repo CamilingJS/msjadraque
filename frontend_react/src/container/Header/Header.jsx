@@ -17,7 +17,7 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <div id="home" className="app__header app__flex">
+    <div className="app__header app__flex">
       <motion.div 
         whileInView={{ x: [-100, 0], opacity: [0,1] }}
         transition={{duration: 0.5}}
@@ -27,13 +27,16 @@ const Header = () => {
             <div className="badge-cmp app__flex ">
               <span>👋🏼</span>
               <div style={{marginLeft: 20}} >
-                <p className="p-text" >Hello, I am </p>
+                <p className="p-text" >Hello & welcome! My name is...</p>
                 <h1 className="head-text" >Ms. Jadraque</h1>
               </div> 
             </div>
             <div className="tag-cmp app__flex">
-              <p className="p-text" >Educator</p>
-              <p className="p-text" >Advocate</p>
+              <p className="p-text" >I am a...</p>
+              <h3 className="p-text" >RESEARCHER</h3>
+              <h3 className="p-text" >ORGANIZER</h3> 
+              <h3 className="p-text" >FACILITATOR</h3> 
+              <p className="p-text" >of knowledge</p>
             </div>
           </div>
         
@@ -56,16 +59,14 @@ const Header = () => {
       </motion.div>
 
       <motion.div
-          variant={scaleVariants}
-          whileInView={scaleVariants.whileInView}
-          className="app__header-circles"
-        >
-          {[images.flutter, images.redux, images.sass].map((circle, index)=>(
-            <div className='circle-cmp app__flex' key={`circle-${index}`} >
-              <img src={circle} alt="circle" />
-            </div>
-          ))}
+      whileInView={{ x: [100, 0], opacity: [0,1] }}
+      transition={{duration: 0.5}}
+      className='app__header-circles'>
+        <div className="circle" ><h5>MATH 6</h5></div>
+        <div className="circle"><h5>PRE-ALGEBRA</h5></div>
+        <div className="circle"><h5>ALGEBRA</h5></div>
       </motion.div>
+
       
     </div>
   )

@@ -1,13 +1,13 @@
 .app__navbar {
     width: 100%;
-
     display: flex; 
     justify-content: space-between;
     align-items: center;
 
     padding: 1rem 2rem; 
-    background-color: rgba(225,225,225,0.25);
+    background-color: white;  
     backdrop-filter: blur(4px);
+    color: black; 
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(225,225,225,0.18);
     position: fixed; 
@@ -18,11 +18,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     img {
         width: 90px;
         height: 20px;
-
         @media screen and (min-width: 2000px) {
             width: 180px;
             height: 40px;
@@ -115,7 +113,7 @@
         align-items: flex-end;
         flex-direction: column;
 
-        background: url('../../assets/bgWhite.png');
+        background-color: url('../../assets/bgWhite.png');
         background-color: var(--white-color);
         background-size: cover;
         background-repeat: repeat;
