@@ -38,6 +38,15 @@ const Blog = () => {
           >
             <h1>{blog.title}</h1>
             <p>{blog.blog}</p>
+            
+            <motion.div
+            whileInView={{ y: [100, 0], opacity: [0,1] }}
+            transition={{duration: 0.5}}  
+            className="featuredBlogCTA"
+            >
+              <h2>Read More ⤴</h2>
+            </motion.div>
+
           </motion.div>
           
         </div>

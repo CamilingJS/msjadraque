@@ -50,3 +50,18 @@
         font-size: large;
     }
 }
+
+.featuredBlogCTA{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    min-width: 80%; 
+    font-size: small;
+    color: var(--secondary-color);
+
+    h2{
+        cursor: pointer;
+    }
+}
+
+
