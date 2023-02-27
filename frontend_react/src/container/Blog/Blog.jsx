@@ -20,7 +20,7 @@ const Blog = ({portableTextContent}) => {
       
       
       {blog.map((blog, index)=>(
-        <div key={blog + index} id="blog" className="featuredBlog" >
+        <div key={blog + index} id="featured" className="featuredBlog" >
           <motion.div 
           whileInView={{ y: [100, 0], opacity: [0,1] }}
           transition={{duration: 0.5}}  

@@ -4,7 +4,7 @@ import './Footer.scss'
 
 const Footer = () => {
   return (
-    <div className='footer' >@copy All rights reserved</div>
+    <div className='footer' >&copy; All rights reserved</div>
   )
 }
 
