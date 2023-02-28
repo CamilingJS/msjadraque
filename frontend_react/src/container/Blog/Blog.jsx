@@ -50,7 +50,7 @@ const Blog = ({portableTextContent}) => {
             transition={{duration: 0.5}}  
             className="featuredBlogCTA"
             >
-              <h2>Read More ⤴</h2>
+              <h2><a href="#blogs" >Read More ⤴</a></h2>
             </motion.div>
 
           </motion.div>
