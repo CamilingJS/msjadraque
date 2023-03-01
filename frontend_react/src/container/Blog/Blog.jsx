@@ -42,7 +42,7 @@ const Blog = ({portableTextContent}) => {
           >
             <h1>{blog.title}</h1>
             <p>{blog.blog}</p>
-            {console.log(blog)}
+         
            
             
             <motion.div
